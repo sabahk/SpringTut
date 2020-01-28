@@ -1,7 +1,5 @@
 package controller;
 
-import java.util.Hashtable;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +17,7 @@ public class PersonController {
 	PersonService ps;
 	
 	@RequestMapping("/all")
-	public Hashtable<String, Person> getAll(){
+	public Person getAll(){
 		return ps.getAll();
 	}
 	
